@@ -30,7 +30,8 @@ class MainActivity : AppCompatActivity() {
                 val student = Student(
                     name = nameEt.text.toString(),
                     age = ageEt.text.toString().toInt(),
-                    phoneNumber = phoneEt.text.toString()
+                    phoneNumber = phoneEt.text.toString(),
+                    email = "b@mail.ru"
                 )
                 appDatabase.studentDao().addStudent(student)
                 list.add(student)
